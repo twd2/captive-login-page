@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portal Login</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+<ul class="portal-list">
+  {% for p in passwords %}
+    <li class="portal-item" data-id="{{ loop.index0 }}">
+      <div class="portal-item__profile">{{ p.profile }}</div>
+      <div class="portal-item__username">{{ p.username }}</div>
+    </li>
+  {% endfor %}
+</ul>
+<div class="portal-status-container">
+  <div class="portal-status">
+    Network not connected
+  </div>
+</div>
+<script src="assets/main.js"></script>
+</body>
+</html>

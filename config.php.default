@@ -1,0 +1,25 @@
+<?php
+
+const NO_PROBE = true;
+
+// MIME: http://phphttpclient.com/docs/class-Httpful.Mime.html
+
+$profiles = [
+  'Tongji Portal' => [
+    'url' => 'http://172.30.0.94/',
+    'form' => [
+      'DDDDD' => '{username}',
+      'upass' => '{password}',
+      '0MKKey' => '',
+    ],
+    'mime' => 'application/x-www-form-urlencoded',
+  ],
+];
+
+$passwords = [
+  [
+    'profile' => 'Tongji Portal',
+    'username' => '222222',
+    'password' => 'foobar',
+  ],
+];

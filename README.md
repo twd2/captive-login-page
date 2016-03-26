@@ -6,6 +6,14 @@ You can select the username / password pair desired to use in the poped login wi
 
 1. Clone this repository and make it accessable locally (e.g. localhost/...)
 
-2. Configure authentication infomation in `config.json`
+2. Install dependencies via Composer:
 
-3. Edit `/Library/Preferences/SystemConfiguration/CaptiveNetworkSupport/Settings.plist`
+   ```bash
+   composer install
+   ```
+
+2. Copy `config.php.default` to `config.php` and configure for authentication.
+
+3. Open and edit `/Library/Preferences/SystemConfiguration/CaptiveNetworkSupport/Settings.plist`:
+	
+   Replace `http://captive.apple.com/hotspot-detect.html` with something like `http://localhost/captive-login-page/probe.php`.
